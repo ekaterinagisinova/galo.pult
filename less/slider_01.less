@@ -1,0 +1,81 @@
+.slider_01{
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 40px;
+    padding: 0;
+    box-sizing: border-box;    
+}
+.slider_link{
+    text-decoration: none;
+}
+.slide_01{
+    display: none;
+    width:100%;  
+    overflow: hidden;    
+    &_img{        
+        width: 100%;
+    }
+    &_title{
+        margin: -85px 0 0 0;
+        padding: 20px 60px;
+        .text(roboto, 40px, 700, @black);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        line-height: 1;
+        box-sizing: border-box;
+        
+    }
+    &_description{
+        background-color: @blue;
+        padding: 10px 60px;
+        box-sizing: border-box;
+        z-index: 100;
+        &_title{
+            .text(roboto, 20px, 700, @white);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            line-height: 1;
+        }
+        &_text{
+            .text(roboto, 14px, 400, @white);
+            margin: 2px 0 0 0;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+    }    
+}
+.slide_01_active{
+    display: block;
+}
+.pagination_01{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    &_item{
+        display: block;
+        width: 18px; 
+        height: 18px;
+        border-radius: 50%;
+        background-color: @blue;
+        margin: 0 8px;
+        box-sizing: border-box;
+        &_active{
+            background-color: @black;
+        }
+    }
+    &_item:hover{
+        cursor: pointer;
+    }
+    
+}
+
+.black{
+    color: @black;
+}
+.blue{
+    color: @blue;
+}
+.white{
+    color: @white;
+}
