@@ -26,6 +26,105 @@
           align-items: center;
   background-color: white;
 }
+.slider_01 {
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 40px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.slider_link {
+  text-decoration: none;
+}
+.slide_01 {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+}
+.slide_01_img {
+  width: 100%;
+}
+.slide_01_title {
+  margin: -85px 0 0 0;
+  padding: 20px 60px;
+  font-family: roboto;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.slide_01_description {
+  background-color: #1d9cd8;
+  padding: 10px 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 100;
+}
+.slide_01_description_title {
+  font-family: roboto;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 1;
+}
+.slide_01_description_text {
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  margin: 2px 0 0 0;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.slide_01_active {
+  display: block;
+}
+.pagination_01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.pagination_01_item {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #1d9cd8;
+  margin: 0 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.pagination_01_item_active {
+  background-color: #000000;
+}
+.pagination_01_item:hover {
+  cursor: pointer;
+}
+.black {
+  color: #000000;
+}
+.blue {
+  color: #1d9cd8;
+}
+.white {
+  color: #ffffff;
+}
 body {
   max-width: 1200px;
   min-width: 300px;
