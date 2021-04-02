@@ -1,0 +1,150 @@
+footer{
+    width: 100%;
+    margin-top: 220px;
+    box-sizing: border-box;
+}
+.footer{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        &_tel{
+            width: 50%;
+            display: flex;
+            align-items: center;              
+            &_info{
+                display: flex;
+                flex-direction: column;   
+                padding: 0 0 0 20px;  
+                box-sizing: border-box;                        
+                &_number{
+                    margin-bottom: 2px;
+                    .text(Roboto, 27px, 700, @black);
+                    line-height: 1;
+                    letter-spacing: normal;
+                    cursor: pointer;
+                }
+                &_number:hover{
+                    text-decoration: underline;
+                }
+                &_text{
+                    .text(Roboto, 12px, 400, @black);
+                    line-height: 1;
+                    letter-spacing: normal;
+                }
+            }
+            
+
+        }
+        &_nav{
+            width: 66%;  
+            display: flex; 
+            &_navigation{   
+                width: 66%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                max-height: 205px;
+                    &_link{                            
+                    text-decoration: none;
+                    margin-bottom: 20px;
+                    box-sizing: border-box;
+                    &_text{
+                        .text(Roboto, 14px, 400, @black);
+                        text-transform: uppercase;
+                        line-height: 1;
+                    }
+                }
+                &_link:hover .footer_nav_navigation_link_text{
+                    color: @blue;
+                    opacity: 50%;
+                }
+            }
+            &_about{
+                width: 33%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                max-height: 205px;
+                &_link{                            
+                    text-decoration: none;
+                    margin-bottom: 20px;
+                    box-sizing: border-box;
+                    &_text{
+                        position: relative;
+                        .text(Roboto, 14px, 400, @black);
+                        text-transform: uppercase;
+                        line-height: 1;
+                    }
+                    &_text:after{
+                        position: absolute;
+                        content: "";
+                        margin-left: 6px;
+                        margin-bottom: 4px;
+                        box-sizing: border-box;
+                        width: 7px;
+                        height: 7px;
+                        top:0;                        
+                        border: solid black;
+                        border-width: 1px 1px 0 0;
+                        display: inline-block;                        
+                    }
+                    &_text:before{
+                        position: absolute;
+                        content: "";                      
+                        box-sizing: border-box;
+                        width: 10px;
+                        height: 10px;
+                        top: -3px;                        
+                        border: solid black;
+                        border-width: 0 1px 0 0;
+                        display: inline-block;
+                        transform: rotate(45deg);
+                    }
+                }   
+                &_link:hover .footer_nav_about_link_text{
+                    color: @blue;
+                    opacity: 50%;
+                }             
+            }
+        }
+    }
+
+.company:before{
+    left: 92px;
+}
+.company:after{
+    left: 92px;
+}
+
+.contact:before{
+    left: 75px;
+}
+.contact:after{
+    left: 75px;
+}
+
+.salon:before{
+    left: 60px;
+}
+.salon:after{
+    left: 60px;
+}
+.news:before{
+    left: 65px;
+}
+.news:after{
+    left: 65px;
+}
+
+
+
+.copyright{
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    &_text{
+        .text(Roboto, 14px, 400, @black);
+        line-height: 1;
+        text-transform: uppercase;
+    }
+}
