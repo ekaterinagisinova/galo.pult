@@ -125,6 +125,60 @@
 .white {
   color: #ffffff;
 }
+.goods {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.goods_item {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.goods_item_link {
+  padding: 10px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: #1d9cd8;
+}
+.goods_item_link:hover {
+  color: #000000;
+}
+.goods_image {
+  width: 50%;
+}
+.goods_img {
+  max-width: 600px;
+  max-height: 600px;
+  display: none;
+}
+.img_micro {
+  display: block;
+}
+.black {
+  color: #000000;
+}
 footer {
   width: 100%;
   margin-top: 220px;
