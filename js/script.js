@@ -50,37 +50,32 @@ const activePagination = function(){
     paginations[slideNumber].classList.add('activePagination');
 }
 
-const nextSlide = function(event){
-    if(event == undefined){
-        if(slideNumber >= slides.length){
-            slideNumber = 0;              
-            activePagination();
-            activeSlide();        
-        }
-        else{          
-            activePagination();
-            activeSlide();    
-            slideNumber++;
-        }
+const nextSlide = function() {
+    if(slideNumber >= slides.length){
+        slideNumber = 0;              
+        activePagination();
+        activeSlide();        
     }
+    else{          
+        activePagination();
+        activeSlide();    
+        slideNumber++;
+    }
+} 
+
+const slideShow = function(event){
+    if(event == undefined){
+            nextSlide();
+        }
     else {
         slideNumber = event.target.getAttribute('data_pagination');
-        if(slideNumber >= slides.length){
-            slideNumber = 0;              
-            activePagination();
-            activeSlide();        
-        }
-        else{          
-            activePagination();
-            activeSlide();    
-            slideNumber++;
-        }
-    }   
+        nextSlide();
+    }      
 }
 
 for (let i = 0; i < paginations.length; i++){
-    paginations[i].addEventListener('click', nextSlide);    
+    paginations[i].addEventListener('click', slideShow);    
     paginations[i].setAttribute('data_pagination', i);
 }
 
-setInterval(nextSlide, 2000);
+setInterval(slideShow, 2000);
