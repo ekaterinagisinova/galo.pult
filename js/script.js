@@ -52,3 +52,35 @@ for (let i = 0; i < pagination_01.length; i++){
     pagination_01[i].addEventListener('click', activeItemPagination);
     pagination_01[i].setAttribute('data_pagination', i);
 }
+
+
+
+// -----Googs-----
+
+const goodsItems = document.querySelectorAll('.goods_item_link');
+
+const activeGood = function(event){
+    let target = event.target;      
+    if(!target.classList.contains('active')){
+        document.querySelector('.active').classList.remove('active');
+        target.classList.add('active');
+    }   
+}
+
+let activeImg = function(event){
+    let target = event.target; 
+    let images = document.querySelectorAll('.goods_img');
+    
+    for (let i = 0; i < images.length; i++){
+        let imgGoogs = images[i].classList[1];        
+        if (target.classList[1] === imgGoogs) {
+            document.querySelector('.img_active').classList.remove('img_active');
+            images[i].classList.add('img_active');
+        }
+    }       
+}
+
+for (let i = 0; i < goodsItems.length; i++){
+    goodsItems[i].addEventListener('mousemove', activeGood);
+    goodsItems[i].addEventListener('mousemove', activeImg);
+}

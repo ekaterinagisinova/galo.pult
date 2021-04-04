@@ -173,11 +173,11 @@
   max-height: 600px;
   display: none;
 }
-.img_micro {
-  display: block;
-}
-.black {
+.active {
   color: #000000;
+}
+.img_active {
+  display: block;
 }
 footer {
   width: 100%;
