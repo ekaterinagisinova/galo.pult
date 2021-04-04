@@ -86,7 +86,7 @@
   text-transform: uppercase;
   line-height: 1;
 }
-.slide_01_active {
+.activeSlide {
   display: block;
 }
 .pagination_01 {
@@ -110,11 +110,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.pagination_01_item_active {
-  background-color: #000000;
-}
 .pagination_01_item:hover {
   cursor: pointer;
+}
+.activePagination {
+  background-color: #000000;
 }
 .black {
   color: #000000;
