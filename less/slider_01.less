@@ -3,22 +3,25 @@
     width: 100%;
     margin-top: 40px;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
+}
+.slider_wrap{
+    display: flex; 
 }
 .slider_link{
-    text-decoration: none;
+    text-decoration: none;    
 }
-// .slide_01:hover .slide_img{
-    // transform: scale(1.05);    
-// }
+
 .slide{
     display: none;
-    width:100%;    
+    width:100%;     
     transition: 1s linear; 
-    // overflow: hidden;    
+    overflow: hidden;      
     &_img{        
-        width: 100%;          
-    }
+        // width: 100%; 
+        width:1200px;
+        height: 500px;         
+    }    
     &_title{
         margin: -85px 0 0 0;
         padding: 20px 60px;
@@ -27,23 +30,26 @@
         letter-spacing: 1.5px;
         line-height: 1;
         box-sizing: border-box;
-        z-index: 100;
+        z-index: 10;
     }
     &_description{
         background-color: @blue;
         padding: 10px 60px;
         box-sizing: border-box;
+        z-index: 10;
         &_title{
             .text(roboto, 20px, 700, @white);
             text-transform: uppercase;
             letter-spacing: 1.5px;
             line-height: 1;
+            z-index: 10;
         }
         &_text{
             .text(roboto, 14px, 400, @white);
             margin: 2px 0 0 0;
             text-transform: uppercase;
             line-height: 1;
+            z-index: 10;
         }
     }    
 }

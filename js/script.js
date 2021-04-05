@@ -43,14 +43,14 @@ const activeSlide = function(el,num){
     for (let slide of el) { 
         slide.classList.remove('activeSlide');
     }
-    el[num].classList.add('activeSlide');
+    el[num].classList.add('activeSlide');  
 }
 
 const activePagination = function(el, num){    
     for (let pagination of el) {  
         pagination.classList.remove('activePagination');
     }
-    el[num].classList.add('activePagination');
+    el[num].classList.add('activePagination');    
 }
 
 // для 1го слайдера
