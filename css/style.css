@@ -40,6 +40,8 @@
 .slide {
   display: none;
   width: 100%;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
 }
 .slide_img {
   width: 100%;
@@ -57,13 +59,13 @@
   line-height: 1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 100;
 }
 .slide_description {
   background-color: #1d9cd8;
   padding: 10px 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  z-index: 100;
 }
 .slide_description_title {
   font-family: roboto, Arial, Helvetica, sans-serif;
@@ -123,6 +125,28 @@
 }
 .white {
   color: #ffffff;
+}
+.slide_02 .slide_title {
+  margin-top: -280px;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+.slide_02 .slide_title_span {
+  display: block;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 190px;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+}
+.slide_02 .slide_description {
+  margin-top: -15px;
+}
+.right {
+  text-align: right;
 }
 .goods {
   width: 100%;
